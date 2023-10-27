@@ -6,17 +6,18 @@
 import Foundation
 
 // ***** thingies to make it work *****
+
 let mainCharater = String ("Jimmy Swift")
 let friendOneName = String ("Tommy Python")
 let friendTwoName = String ("Sarah Ruby")
-let collegeName: String = ("Update Univetisty")
+let collegeName: String = ("Update University")
 let friendCollege = true
 let friendMean = false
 var friendToTheLeft = false
 var friendToTheRight = true
 var chapterNumber = (2)
 var chapterName = String ("'Friends!'")
-// var friendPronoun: String = ("her")
+
 func chapterIntro () {
     print ("This is Chapter \(chapterNumber), \(chapterName) ")
 }
@@ -24,16 +25,16 @@ func chapterIntro () {
 func friendCall() {
     print ("Ah, there's his friend! They were on the right!")
 }
-
 func departure() {
     print ("With that, he decided to go on his next adventure.")
 }
 
 // ***** chapster start *****
+
 func chapterTwo() {
     // Your portion of the story goes here
-    print("Hello, world!")
-    print("I like cheese!")
+   // print("Hello, world!")
+  //  print("I like cheese!")
     chapterIntro()
     print("One day, Jimmy decided to go to the park and get some air.")
     print("While sitting by himself on the swingset, he thought he'd look around to find someone to talk to.")
@@ -52,7 +53,7 @@ func chapterTwo() {
     } else {
         print ("However, he changed his mind and set off and continued his journey.")
     }
-    print ("Running out of things to do, he remembers he hasn't talked to his friend \(friendTwoName)'s house")
+    print ("Running out of things to do, he remembers he hasn't talked to his friend in a while and set off to \(friendTwoName)'s house")
     print ("He was so excited to see her, it's been so long and he'd love to know what she's been up to.")
     print ("Instead of \(friendTwoName) answering the door, it was her dad")
     print ("\(mainCharater) asked if \(friendTwoName) was home as he would like to catch up and maybe talk to her about his run in with \(friendOneName)")
