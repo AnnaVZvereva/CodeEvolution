@@ -7,14 +7,17 @@ import Foundation
 
 func chapterFive() {
     // Your portion of the story goes here
-   
+    
     let mainCharater: String = "Jimmy Swift"
-    let ageStartJimmy: Double = 2.2
+    //let ageStartJimmy: Double = 2.2
     let friendNameOne: String = "Tommy Python"
     let friendNameTwo: String = "Sarah Ruby"
+    let ismainCharacherPopular = true
+    let ismainCharacherLoved = true
     
+    let versions: [Double] = [2.2, 5.1, 6.0]
     
-    print("As you remember \(mainCharater) was young boy \(ageStartJimmy) version only.")
+    print("As you remember \(mainCharater) was young boy \(versions[0]) version only.")
     
     var everyDay = 1
     func noChoice() {
@@ -32,11 +35,39 @@ func chapterFive() {
     
     everyDay = 0
     noChoice()
+    
+    print("Family changed his mind a lot. \(mainCharater) started to self-development and he achieved growing from \(versions[0]) version until \(versions[1]) version. He is changing to \(versions[2]) now.")
+    
+    if ismainCharacherPopular == true && ismainCharacherLoved == true {
+        print("He is already popular and loved many developers.")
+    }
+            else {
+                print(".")
+             }
+   
+//        var randomDay: String {
+//            self.typeOfDay.randomElement()
+//            }
+
+    enum typeOfDay {
+        case Workday
+        case Weekday
+        
+        var day: String {
+            switch self {
+            case .Workday:
+                "something"
+            case .Weekday:
+                "Sometimes on Sunday Jimmy goes out with \(friendName) even they don’t have too much free time."
+            }
+        }
+    }
+    print(typeOfDay.Weekday.day)
+  
+    
 }
-
-
-
 /*
- As you remember Jimmy was young boy 2.2 version only. He did not know what he wanted that time. He has just played every day and has never think about his future or career. Finally he decided to change his life because of his friends “Python” and “Ruby”. Family changed his mind a lot. Jimmy started to self-development and he achieved growing from 2.2 version until 5.10 version. He is changing to 6.0 now. He is already popular and loved many developers. Sometimes Jimmy goes out with “Python” and “Ruby” even they don’t have too much free time. They share ideas about everything: problems and solutions, evolution of coding and etc. Jimmy believes he can be the most used programming language in the world by 2050. Happy end)
-
+ As you remember Jimmy was young boy 2.2 version only. He did not know what he wanted that time. He has just played every day and has never think about his future or career. Finally he decided to change his life because of his friends “Python” and “Ruby”. Family changed his mind a lot. Jimmy started to self-development and he achieved growing from 2.2 version until 5.10 version. He is changing to 6.0 now.
+ He is already popular and loved many developers. Sometimes on Sunday Jimmy goes out with “Python” and “Ruby” even they don’t have too much free time. They share ideas about everything: problems and solutions, evolution of coding and etc. Jimmy believes he can be the most used programming language in the world by 2050. Happy end)
+ 
  */
