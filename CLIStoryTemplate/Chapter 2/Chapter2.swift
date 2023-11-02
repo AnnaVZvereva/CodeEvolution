@@ -7,16 +7,16 @@ import Foundation
 
 // ***** thingies to make it work *****
 
-let mainCharater = String ("Jimmy Swift")
-//let friendOneName = String ("Tommy Python")
-//let friendTwoName = String ("Sarah Ruby")
+let mainCharater = String("Jimmy Swift")
+let friendOneName = String("Tommy Python")
+let friendTwoName = String ("Sarah Ruby")
 var friendName: [String] = ["Tommy Python", "Sarah Ruby"]
-let collegeName: String = ("Update University")
+let collegeName: String = "Update University"
 let friendCollege = true
 let friendMean = false
 var friendToTheLeft = false
 var friendToTheRight = true
-var chapterNumber = (2)
+var chapterNumber = 2
 var chapterName: String = ("'Friends!'")
 
 func chapterIntro () {
@@ -34,8 +34,6 @@ func departure() {
 
 func chapterTwo() {
     // Your portion of the story goes here
-   // print("Hello, world!")
-  //  print("I like cheese!")
     chapterIntro()
     print("One day, Jimmy decided to go to the park and get some air.")
     print("While sitting by himself on the swingset, he thought he'd look around to find someone to talk to.")
@@ -45,7 +43,7 @@ func chapterTwo() {
         print ("He looked to his left and saw no one there. He shrugged his shoulders and went on about his day.")
     } else if friendToTheRight {
         friendCall()
-        print ("\(mainCharater) rushed to his friend, \(friendName[0]), who looked as though he was in a hurry")
+        print ("\(mainCharater) rushed to his friend, \(friendOneName), who looked as though he was in a hurry")
         print ("When he finally catches up, he asked \(friendName[0]) where he was off to in such a rush.")
         print ("\(friendName[0]) said that he was tired of his limmited capabilities. He wanted to gain new skills and notoriety, and the only place to do that is \(collegeName).")
         print ("This reply caught \(mainCharater) off guard. 'Why the want to change all of a sudden?' he asked himself.")
@@ -56,7 +54,7 @@ func chapterTwo() {
     }
     print ("Running out of things to do, he remembers he hasn't talked to his friend in a while and set off to \(friendName[1])'s house")
     print ("He was so excited to see her, it's been so long and he'd love to know what she's been up to.")
-    print ("Instead of \(friendName[1]) answering the door, it was her dad")
+    print ("Instead of \(friendTwoName) answering the door, it was her dad")
     print ("\(mainCharater) asked if \(friendName[1]) was home as he would like to catch up and maybe talk to her about his run in with \(friendName[0])")
     print ("\(friendName[1])'s dad told \(mainCharater)...")
     
@@ -68,5 +66,36 @@ func chapterTwo() {
     } else {
         print ("nothing. Instead \(friendName[1])'s dad slams the door in his face")
     }
+    
+        
+    //STRUCT Code NOT REALLY APART OF STORY
+    struct mainChar {
+        var name: String
+        var age: Int
+        var isCool: Bool
+        
+        func coolPerson() {
+            if isCool {
+                print ("\(name) is the coolest!")
+            } else {
+                print ("\(name) is however, not cool...womp womp")
+            }
+        }
+    }
+    
+    let jimmySwift = mainChar(name: "Jimmy Swift", age: 2, isCool: true)
+    let tommyPython = mainChar(name: "Tommy Python", age: 3, isCool: true)
+    let sarahRuby = mainChar(name: "Sarah Ruby", age: 3, isCool: false)
+    print ("''these next few lines are not apart of the story... just gotta meet the reqirements''")
+    jimmySwift.coolPerson()
+    tommyPython.coolPerson()
+    sarahRuby.coolPerson()
+    print ("''okay thank you for your time''")
+
 }
+
+// Data types (structs, enums) should be PascalCase. PascalCaseLooksLikeThis
+// constants, variables, functions should be camelCase. camelCaseLooksLikeThis
+// prefer naming things more descriptively rather than being short. prefer to name it Character over Char
+// what if you add a mutating method to your struct (a function that changes a value of the struct)
 
