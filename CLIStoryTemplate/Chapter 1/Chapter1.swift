@@ -20,6 +20,7 @@ import Foundation
 
 func chapterOne() {
     // Your portion of the story goes here
-    print ("Once upon a time a young and talent boy named  \(swiftBoysName) who was born by \(myFirstFunction()) famous company \(companyName()) in \(myFirstFunction()) \(mySecondFunction()) ")
-    print ("Every day \(swiftBoysName) was playing in \(myFirstFunction()  \(mySecondFunction()) solving problems, and learning \(myFirstFunction()) the new languange")
+    //    print ("Once upon a time a young and talent boy named  \(swiftBoysName) who was born by \(myFirstFunction()) famous company \(companyName()) in \(myFirstFunction()) \(mySecondFunction()) ")
+    //    print ("Every day \(swiftBoysName) was playing in \(myFirstFunction()  \(mySecondFunction()) solving problems, and learning \(myFirstFunction()) the new languange")
+    //}
 }
