@@ -45,8 +45,7 @@ func chapterTwo() {
 
     print("While sitting by himself on the swingset, he thought he'd look around to find someone to talk to.")
         
-        //How high is he going on the swing?
-        
+        //How high is he going on the swing? EM-ENUM.....get it?
     enum SwingHeight: String {
             case high = "high"
             case medium = "medium"
@@ -66,9 +65,8 @@ func chapterTwo() {
         let swingHigh: SwingHeight = .high
         let swingMedium: SwingHeight = .medium
         let swingLow: SwingHeight = .low
-        
+        //Print
         swingMedium.heightOfSwing()
-        
         
         // Which way did Jimmy look?
         if friendToTheLeft {
@@ -109,7 +107,7 @@ func chapterTwo() {
         //What was Sarah/Ruby's excuse
         if friendCollege {
             print ("she's not home due to her enrolling in \(collegeName), she also wanted to get bigger and better just like \(friendName[0]).")
-        } else if friendMean{
+        } else if friendMean {
             print ("'I'm sorry but \(friendName[1]) doesn't want to talk to you.... or anyone really.'")
         } else {
             print ("nothing. Instead \(friendName[1])'s dad slams the door in his face")
