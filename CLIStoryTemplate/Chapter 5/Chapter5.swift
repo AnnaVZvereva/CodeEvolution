@@ -16,11 +16,14 @@ func chapterFive() {
     let ismainCharacherLoved = true
     
     let versions: [Double] = [2.2, 5.1, 6.0]
+    let ideas: [String] = ["problems", "and solutions", "evolution of coding", "and etc"]
+    
+    // -------  Story starts here -------
     
     print("As you remember \(mainCharater) was young boy \(versions[0]) version only.")
     
-    var everyDay = 1
-    func noChoice() {
+    func noChoice(everyDay: Int? = nil) {
+        let everyDay = everyDay ?? 0
         switch everyDay {
         case 1:
             print("He did not know what he wanted that time.")
@@ -30,10 +33,15 @@ func chapterFive() {
             print("Finally he decided to change his life because of his friends \(friendNameOne) and \(friendNameTwo)")
         }
     }
-    everyDay = 2
-    noChoice()
     
-    everyDay = 0
+    noChoice(everyDay: 1)
+    noChoice(everyDay: 2)
+    
+    let n = 0
+    for _ in 0...n {
+        print("Just playing on the playground every day...")
+    }
+
     noChoice()
     
     print("Family changed his mind a lot. \(mainCharater) started to self-development and he achieved growing from \(versions[0]) version until \(versions[1]) version. He is changing to \(versions[2]) now.")
@@ -44,10 +52,6 @@ func chapterFive() {
             else {
                 print(".")
              }
-   
-//        var randomDay: String {
-//            self.typeOfDay.randomElement()
-//            }
 
     enum typeOfDay {
         case Workday
@@ -58,13 +62,15 @@ func chapterFive() {
             case .Workday:
                 "something"
             case .Weekday:
-                "Sometimes on Sunday Jimmy goes out with \(friendName) even they don’t have too much free time."
+                "Sometimes on Sunday Jimmy goes out with \(friendName[0]) and \(friendName[1]) even they don’t have too much free time."
             }
         }
     }
-    print(typeOfDay.Weekday.day)
-  
     
+    print(typeOfDay.Weekday.day)
+    print("They share ideas about everything: \(ideas[0]) \(ideas[1]) \(ideas[2]) \(ideas[3])")
+    
+    print("Jimmy believes he can be the most used programming language in the world by 2050.")
 }
 /*
  As you remember Jimmy was young boy 2.2 version only. He did not know what he wanted that time. He has just played every day and has never think about his future or career. Finally he decided to change his life because of his friends “Python” and “Ruby”. Family changed his mind a lot. Jimmy started to self-development and he achieved growing from 2.2 version until 5.10 version. He is changing to 6.0 now.
