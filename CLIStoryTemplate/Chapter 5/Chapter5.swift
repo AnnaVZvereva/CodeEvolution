@@ -54,7 +54,7 @@ func chapterFive() {
     noChoice(everyDay: 1)                                                                                              /* run my function*/
     noChoice(everyDay: 2)
     
-    let n = 0
+    let n = 2
     for _ in 0...n {
         print("Just playing on the playground every day...")
     }
